@@ -1,0 +1,15 @@
+{
+    "name": "dansup/chappi",
+    "description": "an irc bot",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Supernault",
+            "email": "danielsupernault@gmail.com"
+        }
+    ],
+    "require": {
+        "phergie/phergie-irc-bot-react": "~1"
+    }
+}
