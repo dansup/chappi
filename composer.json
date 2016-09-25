@@ -10,6 +10,22 @@
         }
     ],
     "require": {
-        "phergie/phergie-irc-bot-react": "~1"
+        "phergie/phergie-irc-bot-react": "~1",
+        "phergie/phergie-irc-plugin-react-pong": "~1",
+        "phergie/phergie-irc-plugin-react-autojoin": "~1.1",
+        "phergie/phergie-irc-plugin-react-commandhelp": "~1",
+        "phergie/phergie-irc-plugin-react-command": "1.*",
+        "phergie/phergie-irc-plugin-react-eventfilter": "^1",
+        "pschwisow/phergie-irc-plugin-react-puppet": "~1",
+        "phergie/phergie-irc-plugin-react-joinpart": "~1",
+        "enebe-nb/phergie-irc-plugin-react-tell": "^1.0",
+        "phergie/phergie-irc-plugin-react-nickserv": "~1",
+        "google/apiclient":"^2.0"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Plugins\\": "Plugins/"
+        }
     }
 }
