@@ -20,7 +20,8 @@
         "phergie/phergie-irc-plugin-react-joinpart": "~1",
         "enebe-nb/phergie-irc-plugin-react-tell": "^1.0",
         "phergie/phergie-irc-plugin-react-nickserv": "~1",
-        "google/apiclient":"^2.0"
+        "google/apiclient":"^2.0",
+        "guzzlehttp/guzzle": "~6.0"
 
     },
     "autoload": {
