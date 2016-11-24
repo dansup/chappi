@@ -13,6 +13,7 @@ class AsciiPlugin implements PluginInterface
         return array(
             'command.tf' => 'handleEvent',
             'command.tableflip' => 'handleEvent',
+            'command.unflip' => 'handleEvent',
             'command.sh' => 'handleEvent',
             'command.shrug' => 'handleEvent',
             'command.lod' => 'handleEvent',
@@ -45,6 +46,10 @@ class AsciiPlugin implements PluginInterface
           case 'tf':
           case 'tableflip':
             $msg = "(╯°□°）╯︵ ┻━┻";
+            break;
+
+          case 'unflip':
+            $msg = "┬─┬ノ(ಠ_ಠノ)";
             break;
 
           case 'lod':
