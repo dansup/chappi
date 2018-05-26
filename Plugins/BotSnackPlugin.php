@@ -22,25 +22,18 @@ class BotSnackPlugin implements PluginInterface
 
         $channel = $event->getSource();
 
-        $noise = [
+        $salutations = [
             'nom nom nom.',
             'snack acquired. world domination plans have been postponed.',
             'mmmm cookies.',
             'I LURVE SNACKS!',
             'pls feed me moar, im getting skinny.',
-            ''
-        ];
-
-        $salutations = [
-            '',
             'very much appreciated '.$event->getNick().'.',
             $event->getNick().' da real mvp.',
-            $event->getNick().' mah homegurl fo sho.',
-            'thanks.',
-            'this guy fucks'
+            'thanks.'
         ];
 
-        $msg = trim($noise[array_rand($noise)].' '.$salutations[array_rand($salutations)]);
+        $msg = trim($salutations[array_rand($salutations)]);
         
         if(empty($msg) != true) {
             $queue->ircPrivmsg($channel, $msg);
